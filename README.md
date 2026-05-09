@@ -23,6 +23,16 @@ Brainstorm → Plan → Execute → Review, automated with the Superpowers plugi
 | `Demo 2/demo-2-handout.md` | Memory files handout |
 | `Demo 3/demo-3-handout.md` | Full loop handout |
 
+## Practice project — Course Tracker
+
+`course-tracker/` is a small vanilla HTML/JS app used as the hands-on exercise. After the workshop, use it to practice the full loop:
+
+1. Generate a project memory file for your AI tool of choice
+2. Pick a bug from `ISSUES.md` — spec it, fix it, review the diff
+3. Pick a feature from `FEATURES.md` — same loop
+
+See `course-tracker/README.md` for full instructions.
+
 ## Key takeaway
 
 > The model has no memory between sessions. Context is the product. Anything important enough to specify in a prompt is important enough to commit to a file.

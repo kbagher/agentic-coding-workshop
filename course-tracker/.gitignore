@@ -1,0 +1,21 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Dependencies (this project has none, but in case students add anything)
+node_modules/
+
+# IMPORTANT: do NOT ignore tool-specific context folders.
+# These should be committed so your team benefits from shared context.
+#
+# .claude/        ← keep
+# .cursor/        ← keep
+# .github/        ← keep
+# .agent/         ← keep
+# .windsurf/      ← keep
+#
+# CLAUDE.md, AGENTS.md, GEMINI.md — also keep, commit them.

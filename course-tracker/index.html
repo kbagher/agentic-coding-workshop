@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Course Tracker</h1>
+    <div class="gpa">GPA: <span id="gpa-value">—</span></div>
+  </header>
+
+  <main>
+    <section class="add-course">
+      <h2>Add a course</h2>
+      <form id="course-form">
+        <input type="text" id="code" placeholder="Code (e.g., CS101)" required>
+        <input type="text" id="name" placeholder="Course name" required>
+        <input type="number" id="credits" placeholder="Credits" min="1" max="6" required>
+        <input type="text" id="semester" placeholder="Semester (e.g., Fall 2026)" required>
+        <select id="status">
+          <option value="planned">Planned</option>
+          <option value="in-progress">In Progress</option>
+          <option value="completed">Completed</option>
+        </select>
+        <input type="text" id="grade" placeholder="Grade (if completed)">
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="course-list">
+      <h2>Courses</h2>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="planned">Planned</button>
+        <button data-filter="in-progress">In Progress</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+      <ul id="courses"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
